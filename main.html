@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Clínica Vida Plena</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2a9d8f, #1f776d);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #e0f7f5;
+    }
+
+    h1, h2 {
+      color: #264653;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .services, .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .services div, .team div {
+      max-width: 280px;
+      text-align: center;
+    }
+
+    .services img, .team img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .form-section {
+      background-color: #e9ecef;
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 50px auto;
+    }
+
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, select {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #2a9d8f;
+      color: white;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #21867a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2a9d8f;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .services, .team {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .services div, .team div {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Clínica Vida Plena</h1>
+  <p>Cuidando da sua saúde com excelência e carinho.</p>
+</header>
+
+<div class="container">
+  <h2>Serviços Oferecidos</h2>
+  <div class="services">
+    <div>
+      <img src="img/atendimento.jpeg" alt="Atendimento Médico">
+      <p><strong>Atendimento Médico:</strong><br>Consultas com clínicos gerais e especialistas em diversas áreas da saúde.</p>
+    </div>
+    <div>
+      <img src="img/exames.jpeg" alt="Exames Laboratoriais">
+      <p><strong>Exames Laboratoriais:</strong><br>Realizamos exames com precisão, conforto e agilidade.</p>
+    </div>
+  </div>
+
+  <h2>Nossa Equipe</h2>
+  <div class="team">
+    <div>
+      <img src="img/dra.ana.jpeg" alt="Dra. Ana">
+      <p><strong>Dra. Ana Souza</strong><br>Clínica Geral</p>
+    </div>
+    <div>
+      <img src="img/Captura de tela 2025-04-20 012130.png" alt="Dr. Carlos">
+      <p><strong>Dr. Carlos Mendes</strong><br>Nutricionista</p>
+    </div>
+    <div>
+      <img src="img/dra.2.jpeg" alt="Dra. Lúcia">
+      <p><strong>Dra. Lúcia Vieira</strong><br>Radiologista</p>
+    </div>
+  </div>
+
+  <h2>Quer saber mais?</h2>
+  <div class="form-section">
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade">
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="">Selecione</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+      </select>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Clínica Vida Plena. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
